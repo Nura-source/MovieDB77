@@ -1,0 +1,152 @@
+.basement {
+    padding-top: 40px;
+
+    &__row {
+        display: flex;
+        padding-top: 30px;
+        border: 2px solid#2b2b2b;
+        background-color: $border-dark-gray;
+        padding-left: 60px;
+
+    }
+
+    &__item {
+        padding-left: 170px;
+        flex-direction: column;
+
+
+    }
+    
+    &__h4 {
+        font-size: 18x;
+        font-weight: 700;
+        color: $text-white;
+        padding-bottom: 10px;
+        margin-left: 15px;
+    }
+    &__list {
+        left: 25px;
+
+        &:last-child {
+            padding-bottom: 20px;
+
+        }
+    }
+
+    &__hr {
+        height: 105px;
+        margin-left: 150px;
+        margin-top: 35px;
+
+    }
+
+    &__about {
+        color: $text-white;
+    }
+    &__subtitle {
+        color: $text-gray;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    &__wor {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 15px;
+        align-items: center;
+        padding-bottom: 40px;
+        margin-left: 20px;
+        color: $text-gray;
+    }
+    &__icon {
+        word-spacing: 25px;
+        justify-content: space-between;
+    }
+    &__logo {
+        width: 287px;
+        height: 133px;
+        
+    }
+    &__link {
+      
+        color: $text-white;
+        text-decoration: none;
+        position: relative;
+        transition: 0.3;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: -10px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 10px;
+            height: 2px;
+            background-color: $bg-aqua;
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.3s;
+
+        }
+
+        &:hover {
+            columns: $text-aqua;
+           
+
+            &::before {
+                left: -20;
+                opacity: 1;
+                visibility: visible;
+                transition: 0.3s;
+            }
+        }
+    }
+    &__attributes {
+        color: $text-white;
+        
+    }
+}
+.nav {
+        margin-left: 100px;
+
+        &__link {
+      
+            color: $text-white;
+            text-decoration: none;
+            position: relative;
+            transition: 0.3;
+    
+            &::before {
+                content: '';
+                position: absolute;
+                left: -10px;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 10px;
+                height: 2px;
+                background-color: $bg-aqua;
+                opacity: 0;
+                visibility: hidden;
+                transition: 0.3s;
+    
+            }
+    
+            &:hover {
+                columns: $text-aqua;
+               
+    
+                &::before {
+                    left: -20;
+                    opacity: 1;
+                    visibility: visible;
+                    transition: 0.3s;
+                }
+            }
+        }
+    }
+    
+
+
+
+
+
+    
